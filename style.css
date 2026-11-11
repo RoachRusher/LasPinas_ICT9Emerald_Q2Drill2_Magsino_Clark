@@ -1,0 +1,151 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #E6DCCD;
+    color: #333333;
+}
+
+.sticky-navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: #E6DCCD;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.custom-navbar {
+    background-color: #648D93;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.navbar-brand-img {
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.custom-nav-btn {
+    background-color: #3D6066;
+    color: #ffffff !important;
+    border-radius: 20px;
+    padding: 6px 25px !important;
+    margin: 2px 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-nav-btn:hover {
+    background-color: #2c474c;
+}
+
+.section-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.hero-section {
+    background-color: #BFD8CF;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner {
+    position: relative;
+    background-color: #cfd6d4;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay-card {
+    background-color: rgba(100, 141, 147, 0.95);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 45px 35px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-overlay-card h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero-overlay-card p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.campus-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    padding-top: 40px;
+}
+
+.polaroid-card {
+    background-color: #ffffff;
+    padding: 12px 12px 35px 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polaroid-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.middle-info-card {
+    background-color: #799DA3;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.footer-banner {
+    background-color: #D96088;
+    color: #ffffff;
+    padding: 20px 25px;
+    font-size: 0.95rem;
+}
+
+.footer-logo {
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+}

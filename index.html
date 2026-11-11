@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Drill 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #E6DCCD;
+            color: #333333;
+        }
+
+        .sticky-navbar-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            background-color: #E6DCCD;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        .custom-navbar {
+            background-color: #648D93;
+            border-radius: 15px;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand-img {
+            max-height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .custom-nav-btn {
+            background-color: #3D6066;
+            color: #ffffff !important;
+            border-radius: 20px;
+            padding: 6px 25px !important;
+            margin: 2px 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .custom-nav-btn:hover {
+            background-color: #2c474c;
+        }
+
+        .section-screen {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        .hero-section {
+            background-color: #BFD8CF;
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-banner {
+            position: relative;
+            background-color: #cfd6d4;
+            border-radius: 15px;
+            padding: 30px 20px;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay-card {
+            background-color: rgba(100, 141, 147, 0.95);
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 45px 35px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-overlay-card h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .hero-overlay-card p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .campus-section-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            flex-grow: 1;
+            padding-top: 40px;
+        }
+
+        .polaroid-card {
+            background-color: #ffffff;
+            padding: 12px 12px 35px 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+            border-radius: 4px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .polaroid-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .middle-info-card {
+            background-color: #799DA3;
+            color: #ffffff;
+            border-radius: 15px;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .footer-banner {
+            background-color: #D96088;
+            color: #ffffff;
+            padding: 20px 25px;
+            font-size: 0.95rem;
+        }
+
+        .footer-logo {
+            max-height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .footer-title {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="OBMC logo.png" alt="OBMC Logo" class="navbar-brand-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav ms-3 me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-btn active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-btn" href="#campuses">Campuses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container section-screen">
+        <section id="home" class="hero-section">
+            <div class="hero-banner">
+                <div class="hero-overlay-card">
+                    <h1>Home</h1>
+                    <p>
+                        At Operation Brotherhood Montessori Center, each child is nurtured in the holistic method of Dr. Maria Montessori. Welcome to the O.B. Montessori Center in the Philippines! We are a progressive pre-k to 12 co-educational school, offering a viable alternative to international schools. At OBMC, we blend tradition and innovation to prepare a child for life. Our mission is to transform our students into self-developing and productive individuals who can succeed, direct, and influence the future of an ever-changing world. Explore our programs and discover the vibrant community that makes OBMC a unique place for a child to grow and develop.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="campuses" class="container section-screen">
+        <div class="campus-section-container">
+            <section class="my-auto py-3">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-sm-6 col-md">
+                        <div class="polaroid-card">
+                            <img src="fairview.png" alt="Fairview Campus" class="polaroid-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md">
+                        <div class="polaroid-card">
+                            <img src="las pinas.png" alt="Las Piñas Campus" class="polaroid-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md">
+                        <div class="polaroid-card">
+                            <img src="obmc greenhills.png" alt="Greenhills Campus" class="polaroid-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md">
+                        <div class="polaroid-card">
+                            <img src="sta ana.png" alt="Sta. Ana Campus" class="polaroid-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md">
+                        <div class="polaroid-card">
+                            <img src="angeles.png" alt="Angeles Campus" class="polaroid-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-3">
+                <div class="middle-info-card">
+                    Both inside and outside Metro Manila, we have five campuses that go across South Luzon and carry different traits and appearances. If you live near or on these locations, then we recommend you do a visit and consider enrolling your children in our school!
+                </div>
+            </section>
+
+            <footer class="footer-banner rounded-3 mt-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <img src="OBMC logo.png" alt="OBMC Logo" class="footer-logo">
+                    </div>
+                    <div class="col-auto col-md-3">
+                        <div class="footer-title">Contact:</div>
+                        <div>+63 2 8722 9720 to 26</div>
+                        <div>info@obmontessori.edu.ph</div>
+                    </div>
+                    <div class="col-md">
+                        <div class="footer-title">Location:</div>
+                        <div>Angeles City, Pampanga. Fairview, Quezon City. Greenhills, San Juan City. B.F. Homes, Las Piñas City. Sta. Ana, Manila City.</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
